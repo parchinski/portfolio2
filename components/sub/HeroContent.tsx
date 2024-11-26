@@ -2,13 +2,14 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { SparklesIcon } from "@heroicons/react/24/solid";
+
 import {
   slideInFromLeft,
   slideInFromRight,
   slideInFromTop,
 } from "@/utils/motion";
-import { SparklesIcon } from "@heroicons/react/24/solid";
-import Image from "next/image";
 
 const HeroContent = () => {
   return (
@@ -20,11 +21,11 @@ const HeroContent = () => {
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+          className="Welcome-box py-[8px] px-[16px] border border-[#7042f88b] opacity-[0.9]"
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer Portfolio
+            Fullstack Developer
           </h1>
         </motion.div>
 
@@ -38,7 +39,7 @@ const HeroContent = () => {
               {" "}
               the best{" "}
             </span>
-            project exprience
+            user expriences
           </span>
         </motion.div>
 
@@ -46,8 +47,8 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          I&apos;m a Full Stack Software Engineer with experience in Web,
+          Mobile, and Backend development. Check out my projects and skills from my GitHub or links from this website.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
