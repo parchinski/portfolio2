@@ -1,7 +1,9 @@
-import Image from 'next/image';
-import React from 'react';
+"use client";
 
-import { Socials } from '@/constants';
+import Image from "next/image";
+import React from "react";
+
+import { Socials } from "@/constants";
 
 const Navbar = () => {
   return (
@@ -32,11 +34,12 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-row gap-5">
-          {Socials.map(social => (
+          {Socials.map((social) => (
             <Image
               src={social.src}
               alt={social.name}
               key={social.name}
+              onClick={() => window.open(social.link, "_blank")}
               width={24}
               height={24}
             />

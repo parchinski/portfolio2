@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 import {
   slideInFromLeft,
   slideInFromRight,
   slideInFromTop,
-} from '@/utils/motion';
-import { SparklesIcon } from '@heroicons/react/24/solid';
+} from "@/utils/motion";
+import { SparklesIcon } from "@heroicons/react/24/solid";
 
 const HeroContent = () => {
   return (
@@ -34,10 +34,10 @@ const HeroContent = () => {
           <span>
             Providing
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-fuchsia-500">
-              {' '}
-              the best{' '}
+              {" "}
+              the best{" "}
             </span>
-digital solutions
+            digital solutions
           </span>
         </motion.div>
 
@@ -45,15 +45,11 @@ digital solutions
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          Hi, I&apos;m a Full Stack Software Engineer with experience in Web,
-          Mobile, and Managing and Repairing JavaScript. Check out my projects!
+          Hi, I&apos;m a 20 year old Full Stack Software Engineer with
+          experience in Web, Mobile, and Managing and Repairing JavaScript.
+          I&apos;m also the PR director at Hack@UCF and currently working as a
+          Support Engineer at CTFd.
         </motion.p>
-        <motion.a
-          variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-full max-w-[200px]"
-        >
-          Learn More!
-        </motion.a>
       </div>
 
       <motion.div
